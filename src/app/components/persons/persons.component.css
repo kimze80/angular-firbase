@@ -1,0 +1,34 @@
+/* middle title text */
+.data-text {
+  font-size: 14px;
+  font-family: arial;
+  text-align: center;
+  padding: 50px;
+}
+
+/* TABLE */
+
+table {
+  border-collapse: collapse;
+  width: 600px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: left;
+  color: gray;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+/* TABLE and CHART */
+.collection-people {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

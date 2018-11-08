@@ -1,0 +1,25 @@
+<div class="data-text">
+  <h1>DADOS</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</div>
+
+<section class="collection-people">
+  <div class="container" *ngIf="persons?.length > 0; else: noPersons">
+    <table class="collection-table">
+      <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Participação</th>
+      </tr>
+      <tr *ngFor="let person of persons">
+        <td>{{ person.name }}</td>
+        <td>{{ person.lastname }}</td>
+        <td>{{ person.participation }}%</td>
+      </tr>
+    </table>
+  </div>
+
+  <div *ngIf="chart" style="width: 450px; height: 50%">
+    <canvas id="myChart">{{ chart }}</canvas>
+  </div>
+</section>

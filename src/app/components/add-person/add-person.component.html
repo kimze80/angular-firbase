@@ -1,0 +1,39 @@
+<header>
+  <div class="register-text">
+    <h1>CADASTRE-SE</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div>
+
+  <form (ngSubmit)="onSubmit()" class="form-add">
+    <div class="inline-form">
+      <input
+        type="text"
+        placeholder="Nome"
+        [(ngModel)]="person.name"
+        name="name"
+        class="name"
+      />
+    </div>
+    <div class="inline-form">
+      <input
+        type="text"
+        placeholder="Sobrenome"
+        [(ngModel)]="person.lastname"
+        name="lastname"
+        class="lastname"
+      />
+    </div>
+    <div class="inline-form">
+      <input
+        type="text"
+        placeholder="Participação"
+        [(ngModel)]="person.participation"
+        name="participation"
+        class="holder"
+      />
+    </div>
+    <div class="inline-form">
+      <button type="submit" value="Submit" id="send-button">ENVIAR</button>
+    </div>
+  </form>
+</header>
